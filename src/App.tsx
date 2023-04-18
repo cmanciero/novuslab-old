@@ -2,14 +2,14 @@ import './App.scss';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import { ScrollToTop } from './components';
+import { Footer, Header, ScrollToTop } from './components';
 import { ContactUs, Faq, JoinUs, Main, NoPageFound, Partners, Team } from './pages';
 
 function App() {
 	return (
 		<div className='flex flex-col h-screen'>
 			<Router>
-				{/* <Header /> */}
+				<Header />
 				<ScrollToTop>
 					<Routes>
 						<Route path='/' element={<Main />} />
@@ -23,7 +23,7 @@ function App() {
 						<Route path='/*' element={<NoPageFound />} />
 					</Routes>
 				</ScrollToTop>
-				{/* <Footer /> */}
+				<Footer />
 			</Router>
 		</div>
 	);

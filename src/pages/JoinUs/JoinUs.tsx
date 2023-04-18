@@ -72,7 +72,7 @@ const JoinUs: React.FunctionComponent<IJoinUs> = () => {
 		setShowAccessCode(true);
 		setAccessCode('');
 		setShowError(false);
-		setValidCode(false);
+		setValidCode(true);
 	}, []);
 
 	const handleFormSubmit = (event: FormEvent) => {
@@ -163,7 +163,7 @@ const JoinUs: React.FunctionComponent<IJoinUs> = () => {
 
 	return (
 		<>
-			{!validCode && (
+			{/* {!validCode && (
 				<div
 					className={`fixed ${showAccessCode ? 'flex' : 'hidden'} z-10 justify-center items-center top-0 left-0 right-0 bottom-0`}
 					style={{ backgroundColor: 'rgba(255, 255, 255, 0.5)' }}
@@ -191,7 +191,7 @@ const JoinUs: React.FunctionComponent<IJoinUs> = () => {
 						</button>
 					</div>
 				</div>
-			)}
+			)} */}
 			{validCode && (
 				<div className={`page max-w-screen-xl w-1/2 mx-auto px-5 mb-5 ${submitted ? 'submitted' : ''}`}>
 					<h1 className='font-semibold text-3xl my-5 text-color-primary'>Member Application</h1>

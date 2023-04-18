@@ -2,19 +2,19 @@ import './Main.scss';
 
 import React from 'react';
 
-import { ComingSoon } from './components';
+import { Hero, Solutions, Vision } from './components';
 
 export interface IMain {}
 
 const Main: React.FunctionComponent<IMain> = () => {
 	return (
 		<>
-			{/* <main>
+			<main>
 				<Hero />
 				<Vision />
 				<Solutions />
-			</main> */}
-			<ComingSoon />
+			</main>
+			{/* <ComingSoon /> */}
 		</>
 	);
 };
