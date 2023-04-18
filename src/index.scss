@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth !important;
+}
+
+body {
+	overflow-x: hidden;
+	font-family: 'Space Mono', monospace;
+}
+
+.blinking-cursor {
+	-webkit-animation: 1s blink step-end infinite;
+	-moz-animation: 1s blink step-end infinite;
+	-ms-animation: 1s blink step-end infinite;
+	-o-animation: 1s blink step-end infinite;
+	animation: 1s blink step-end infinite;
+	border-bottom: 15px solid;
+	height: 100%;
+}
+
+@keyframes blink {
+	from,
+	to {
+		border-bottom-color: transparent;
+	}
+	50% {
+		border-bottom-color: rgb(252, 153, 0);
+	}
+}
+
+@-moz-keyframes blink {
+	from,
+	to {
+		border-bottom-color: transparent;
+	}
+	50% {
+		border-bottom-color: rgb(252, 153, 0);
+	}
+}
+
+@-webkit-keyframes blink {
+	from,
+	to {
+		border-bottom-color: transparent;
+	}
+	50% {
+		border-bottom-color: rgb(252, 153, 0);
+	}
+}
+
+@-ms-keyframes blink {
+	from,
+	to {
+		border-bottom-color: transparent;
+	}
+	50% {
+		border-bottom-color: rgb(252, 153, 0);
+	}
+}
+
+@-o-keyframes blink {
+	from,
+	to {
+		border-bottom-color: transparent;
+	}
+	50% {
+		border-bottom-color: rgb(252, 153, 0);
+	}
+}
